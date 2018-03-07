@@ -1,14 +1,15 @@
 {
     "env": {
-        "browser": true,
-        "es6": true,
-        "node": true,
+        "browser": "true",
+        "es6": "true",
+        "node": "true"
     },
     "extends": "eslint:recommended",
     "parserOptions": {
         "ecmaFeatures": {
-            "experimentalObjectRestSpread": true
-        }
+            "experimentalObjectRestSpread": "true"
+        },
+        "sourceType": "module"
     },
     "rules": {
         "semi": [
@@ -16,7 +17,7 @@
             "always"
         ],
         "no-var": [
-            "error",
+            "error"
         ],
         "prefer-const": ["error", {
             "destructuring": "any",
@@ -34,6 +35,7 @@
         "camelcase": ["error", {"properties": "never"}],
         "no-lonely-if": ["error"],
         "array-bracket-spacing": ["error"],
+        "space-in-parens": ["error", "always"],
 
         "no-console": ["off"],
 
