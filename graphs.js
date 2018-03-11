@@ -15,6 +15,29 @@ class Graph {
   }
 
   /**
+  * calculates the minimum spanning tree using Prom's algorithm
+  * @return {Graph} a new graph containing the minimum spanning tree
+  */
+  getMSTPrim () {
+    const seen = new Set();
+
+    let cur = this.adjacency[0];
+    seen.add( 0 );
+    {
+      c:
+      v:
+    }
+    next = [];
+    
+    while ( seen.size<this.adjacency.length ) {
+      let next = ;
+      for ( const e of current ) {
+
+      }
+    }
+  }
+
+  /**
   * @param {Number} v The starting vertex
   * @return {Number[]} dist[1...n] where dist[i] is the length of the shortest path from v to i
   */
@@ -30,7 +53,7 @@ class Graph {
     for ( const i in this.adjacency ) { // O(n)
       seen[i] = false; //every vertex starts out unseen
     }
-    
+
     let cur = v; //now, we start at the origin, v
     while ( seenNum < this.adjacency.length ) { // and we iterate until we have seen every vertex -- this loop will never terminate if the graph has unconnected components
       for ( const i of this.adjacency[cur] ) { // for all the links from this vertex
